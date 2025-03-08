@@ -18,3 +18,24 @@
     z-index: 999;
     mix-blend-mode: difference;
 }
+
+// responsive queries
+
+// Responsive
+@media (max-width: 768px) {
+    .cursor{
+        display: none;
+    }
+    .cursorContainer{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cursor{
+        display: none;
+    }
+    .cursorContainer{
+        display: none;
+    }
+  }

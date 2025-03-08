@@ -42,11 +42,13 @@ export default function Menu({closeMenu}) {
             variants={slideLeft} 
             {...mountAnim}
             onClick={closeMenu} 
-            width="25" 
-            height="25" 
+            width="24" 
+            height="24" 
             viewBox="0 0 68 68" 
             fill="none" 
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ cursor: 'pointer' }}
+          >
               <path d="M1.5 1.5L67 67" stroke="black" strokeWidth="2"/>
               <path d="M66.5 1L0.999997 66.5" stroke="black" strokeWidth="2"/>
           </motion.svg>
@@ -55,7 +57,7 @@ export default function Menu({closeMenu}) {
         <div className={styles.body}>
           {
             menu.map((el, index) => (
-              < MenuLink data={el} index={index} key={index} closeMenu={closeMenu}/>
+              <MenuLink data={el} index={index} key={index} closeMenu={closeMenu}/>
             ))
           }
         </div>

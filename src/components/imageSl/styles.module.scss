@@ -12,22 +12,27 @@
   object-fit: cover;
 }
 
-// show smaller image on mobile
+// Responsive
 @media (max-width: 768px) {
-  .imgass{
-    display: block;
-  }
-}
-// hide bigger image on mobile
-@media (min-width: 768px) {
   .imgas{
+    height: 10vh;
+    width: 10vw;
+    display: none;
+  }
+  .main{
+    width: 480px;
     display: none;
   }
 }
 
-//hide image on desktop
-@media (min-width: 768px) {
+@media (max-width: 480px) {
   .imgas{
+    height: 10vh;
+    width: 10vw;
+    display: none;
+  }
+  .main{
+    width: 480px;
     display: none;
   }
 }
