@@ -1,0 +1,33 @@
+.main{
+    height: 50vh;
+    width: 100vw; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgas{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// show smaller image on mobile
+@media (max-width: 768px) {
+  .imgass{
+    display: block;
+  }
+}
+// hide bigger image on mobile
+@media (min-width: 768px) {
+  .imgas{
+    display: none;
+  }
+}
+
+//hide image on desktop
+@media (min-width: 768px) {
+  .imgas{
+    display: none;
+  }
+}

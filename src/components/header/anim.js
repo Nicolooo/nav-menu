@@ -1,78 +1,73 @@
-const transition = {duration: 1, ease: [0.76, 0, 0.24, 1]}
+export const height = {
+    initial: {
+        height: 0
+    },
+    enter: (i) => ({
+        height: "100%",
+        transition: {duration: 0.5, delay: 0.05 * i, ease: [0.33, 1, 0.68, 1]}
+    }),
+    exit: (i) => ({
+        height: 0,
+        transition: {duration: 0.3, delay: 0.05 * i, ease: [0.33, 1, 0.68, 1]}
+    })
+}
+
+export const background = {
+    initial: {
+        opacity: 0
+    },
+    enter: {
+        opacity: 0.5,
+        transition: {duration: 0.5, ease: [0.33, 1, 0.68, 1]}
+    },
+    exit: {
+        opacity: 0,
+        transition: {duration: 0.5, ease: [0.33, 1, 0.68, 1]}
+    }
+}
 
 export const opacity = {
     initial: {
         opacity: 0
     },
-    open: {
+    enter: (i) => ({
         opacity: 1,
-        transition: {duration: 0.35}
-    },
-    closed: {
+        transition: {duration: 0.5, ease: [0.33, 1, 0.68, 1], delay: i}
+    }),
+    exit: {
         opacity: 0,
-        transition: {duration: 0.35}
+        transition: {duration: 0.5, ease: [0.33, 1, 0.68, 1]}
     }
 }
 
-export const height = {
-  initial: {
-    height: 0
-  },
-  enter: {
-    height: "auto",
-    transition
-  },
-  exit: {
-    height: 0,
-    transition
-  }
-}
-
-export const background = {
+export const slideLeft = {
     initial: {
-        height: 0
+        x: 150
     },
-    open: {
-        height: "100vh",
-        transition
+    enter: {
+        x: 0,
+        transition: {duration: 0.5, ease: [0.33, 1, 0.68, 1]}
     },
-    closed: {
-        height: 0,
-        transition
+    exit: {
+        x: 150,
+        transition: {duration: 0.5, ease: [0.33, 1, 0.68, 1]}
     }
 }
 
-export const blur = {
+export const rotateX = {
     initial: {
-        filter: "blur(0px)",
-        opacity: 1
-    },
-    open: {
-        filter: "blur(4px)",
-        opacity: 0.6,
-        transition: {duration: 0.3}
-    },
-    closed: {
-        filter: "blur(0px)",
-        opacity: 1,
-        transition: {duration: 0.3}
-
-    }
-}
-
-export const translate = {
-    initial: {
-        y: "100%",
+        rotateX: 90,
         opacity: 0
     },
     enter: (i) => ({
-        y: 0,
+        rotateX: 0,
         opacity: 1,
-        transition: {duration: 1, ease: [0.76, 0, 0.24, 1], delay: i[0]}
+        transition: {duration: 0.5, ease: [0.33, 1, 0.68, 1], delay: 0.3 + (i * 0.05)}
     }),
-    exit: (i) => ({
-        y: "100%",
+    exit: {
         opacity: 0,
-        transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: i[1]}
-    })
+        transition: {duration: 0.5, ease: [0.33, 1, 0.68, 1]}
+    }
 }
+
+export const mountAnim = {'initial': 'initial', 'animate': 'enter', 'exit': 'exit'}

@@ -1,0 +1,139 @@
+.features {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #000;
+    color: white;
+    .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            // border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            .icon {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0 0 15px 0;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin: 0;
+                color: #888;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .features {
+        .wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+
+        .container {
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+
+                .feature {
+                    padding: 1.5rem;
+                    text-align: center;
+
+                    .icon {
+                        margin: 0 auto 1rem;
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    h3 {
+                        font-size: 1.25rem;
+                        margin-bottom: 0.75rem;
+                    }
+
+                    p {
+                        font-size: 0.875rem;
+                        max-width: 300px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .features {
+        padding: 3rem 1rem;
+
+        .container {
+            h2 {
+                font-size: 1.75rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .grid {
+                gap: 1.5rem;
+
+                .feature {
+                    padding: 1.25rem;
+
+                    .icon {
+                        width: 40px;
+                        height: 40px;
+                        margin-bottom: 0.75rem;
+                    }
+
+                    h3 {
+                        font-size: 1.125rem;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    p {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}

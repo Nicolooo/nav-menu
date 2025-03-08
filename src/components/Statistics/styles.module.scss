@@ -1,0 +1,56 @@
+.statistics {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #000;
+    color: white;
+    display: inline-block;
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        .statItem {
+            text-align: center;
+            flex: 1;
+            padding: 0 15px;
+
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin: 0;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin: 0;
+                color: #888;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .statistics {
+        padding: 60px 0;
+
+        .wrapper {
+            flex-direction: column;
+            gap: 40px;
+
+            .statItem {
+                h2 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+} 
