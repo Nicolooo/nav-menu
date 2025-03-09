@@ -1,5 +1,5 @@
 .main {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,16 +61,21 @@
 // Responsive
 @media (max-width: 768px) {
   .project{
-    font-size: 10vw;
-    padding-top: 0px;
+    font-size: 2rem;
   }
   .title{
-    font-size: 7vw;
+    font-size: 2rem;
   }
   .projectLLLL{
     font-size: 10vw;
   }
   .project p{
-    font-size: 6vw;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project{
+    font-size: 10;
   }
 }

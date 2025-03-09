@@ -96,12 +96,20 @@
 // Responsive
 @media (max-width: 768px) {
   .paragraph{
-    font-size: 2rem;
+    font-size: 5rem;
+  }
+    .paragraphContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .paragraph{
-    font-size:1.5rem;
+    font-size:2rem;
   }
 }

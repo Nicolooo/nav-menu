@@ -1,38 +1,35 @@
 .main{
-    height: 50vh;
-    width: 100vw; 
-    display: flex;
+    height: 70vh;
+    width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.imgContainer{
+
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 .imgas{
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 // Responsive
 @media (max-width: 768px) {
-  .imgas{
-    height: 10vh;
-    width: 10vw;
-    display: none;
-  }
-  .main{
-    width: 480px;
-    display: none;
-  }
+  
 }
 
 @media (max-width: 480px) {
-  .imgas{
-    height: 10vh;
-    width: 10vw;
-    display: none;
-  }
-  .main{
-    width: 480px;
-    display: none;
-  }
+ 
 }

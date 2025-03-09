@@ -22,7 +22,7 @@ export default function Footer() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    Built by <span>BLUEMONK</span>
+                    Built by BLUEMONK.
                 </motion.div>
             </div>
         </footer>

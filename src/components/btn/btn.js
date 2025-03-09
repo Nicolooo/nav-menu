@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import styles from './style.module.scss';
 import gsap from 'gsap';
 import Magnetic from './magnetic';
-
+import { useRouter } from 'next/navigation';
 export default function Btn({children, backgroundColor="#fff", ...attributes}) {
 
   const circle = useRef(null);
@@ -26,10 +26,15 @@ export default function Btn({children, backgroundColor="#fff", ...attributes}) {
       timeline.current.play();
     }, 300)
   }
-
+const router = useRouter();
   return (
+    
     <Magnetic>
-      <div className={styles.roundedButton} style={{overflow: "hidden"}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes}>
+      <div className={styles.roundedButton} style={{overflow: "hidden"}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes}
+        onClick={() => {
+          router.push("/about");
+        }}
+        >
           {
             children
           }

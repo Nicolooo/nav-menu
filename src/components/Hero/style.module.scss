@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     height: 100vh;
-    margin-bottom: 30vh;
     overflow: hidden;
     z-index: -1;
     background-color: #000;
@@ -24,7 +23,7 @@
 
   @media (max-width: 768px) {
     .main{
-        height: 100vh;
+        height: 70vh;
         padding: 6rem 1rem 2rem;
 
         .content {
