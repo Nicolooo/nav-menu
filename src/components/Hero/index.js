@@ -4,7 +4,7 @@ export default function Hero() {
 
   return (
     <main className={styles.main}>
-      <h1>MORE THAN JUST ANOTHER OFFICE SPACE.</h1>
+      <h1>MORE THAN JUST ANOTHER OFFICE SPACE</h1>
     </main>
   )
 }

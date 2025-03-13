@@ -7,17 +7,17 @@ export default function Index() {
   const projects = [
     {
       title1: "Conference",
-      title2: "spaces.",
+      title2: "spaces",
       src: "/images/zz.png"
     },
     {
       title1: "Meeting",
-      title2: "rooms.",
+      title2: "rooms",
       src: "/images/z.png"
     },
     {
       title1: "Movie",
-      title2: "Theatre.",
+      title2: "Theatre",
       src: "/images/zzz.png"
     }
   ]
@@ -25,7 +25,7 @@ export default function Index() {
   return (
     <main className={styles.main}>
       <div className={styles.gallery}>
-        <p className={styles.title}>Spaces.</p>
+        <p className={styles.title}>Spaces</p>
         {
           projects.map((project, index) => (
             <Project key={index} project={project} />

@@ -7,7 +7,7 @@ import { opacity, slideUp } from './anim';
 
 
 // generate 10 words similar to elegant and functional
-const words = ["VAKE PLAZA.","FUNCTIONAL.", "STYLISH.", "SOPHISTICATED.", "CLASSY.", "OPEN SPACE.", "ELEGANT.", "FUNCTIONAL.", "MODERN."];
+const words = ["VAKE PLAZA","FUNCTIONAL","STYLISH","SOPHISTICATED","CLASSY","OPEN SPACE","ELEGANT","FUNCTIONAL","MODERN"];
 
 export default function Index() {
     const [index, setIndex] = useState(0);

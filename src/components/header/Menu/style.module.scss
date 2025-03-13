@@ -7,6 +7,8 @@
     flex-direction: column;
     justify-content: space-between;
     .header{
+        font-family: 'Avenir';
+        font-weight: 400;
         display: flex;
         justify-content: flex-end;
         padding: 20px;
@@ -21,7 +23,7 @@
 
             &:hover{
                 path{
-                    stroke: #D3FD50;
+                    stroke: #CECECE;
                 }
             }
         }
@@ -52,6 +54,7 @@
             }
         }
         a, p{
+            font-family: 'Avenir';
             color: #000;
             text-transform: uppercase;
             font-size: 8vw;
@@ -59,6 +62,7 @@
             font-weight: 400;
             margin: 0px;
             text-decoration: none;
+
         }
         .outer{
             display: flex;
@@ -69,7 +73,7 @@
             pointer-events: none;
             will-change: top;
             .inner{
-                background-color: #D3FD50;
+                background-color: #CECECE;
                 position: absolute;
                 white-space: nowrap;
                 height: 100%;
@@ -110,7 +114,7 @@
                 }
             }
             .background{
-                background-color: #D3FD50;
+                background-color: #CECECE;
                 position: absolute;
                 height: 100%;
                 width: 100%;
@@ -217,7 +221,7 @@
                 pointer-events: none;
                 will-change: top;
                 .inner{
-                    background-color: #D3FD50;
+                    background-color: #CECECE;
                     position: absolute;
                     white-space: nowrap;
                     height: 100%;
@@ -258,7 +262,7 @@
                     }
                 }
                 .background{
-                    background-color: #D3FD50;
+                    background-color: #CECECE;
                     position: absolute;
                     height: 100%;
                     width: 100%;

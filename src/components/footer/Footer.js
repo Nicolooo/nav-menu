@@ -14,7 +14,7 @@ export default function Footer() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    © {currentYear} Vake Plaza. All rights reserved.
+                    © {currentYear} Vake Plaza | All rights reserved.
                 </motion.div>
                 <motion.div 
                     className={styles.trademark}
