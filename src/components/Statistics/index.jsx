@@ -5,24 +5,24 @@ import { useState, useEffect, useRef } from 'react';
 
 const stats = [
     {
-        number: "24,500",
+        number: "24,000",
         suffix: " m2",
         label: "Total Area"
     },
     {
-        number: "200",
-        suffix: "+",
-        label: "Parking Spaces"
+        number: "10,100",
+        suffix: "m2",
+        label: "Office Spaces"
     },
     {
-        number: "1,000",
-        suffix: " m2",
-        label: "GLA Per Floor"
+        number: "234",
+        suffix: " +",
+        label: "Parking"
     },
     {
-        number: "10,000",
-        suffix: " m2",
-        label: "GLA"
+        number: "4",
+        suffix: "",
+        label: "Elevators"
     }
 ];
 

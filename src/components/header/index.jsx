@@ -6,7 +6,7 @@ import Stairs from './Stairs';
 import Menu from './Menu';
 import { AnimatePresence } from 'framer-motion';
 
-export default function Header() {
+export default function Header({menuLang}) {
 
     const [menuIsOpen, setMenuIsOpen] = useState(false);
 
@@ -17,7 +17,7 @@ export default function Header() {
             {
                 menuIsOpen && <>
                 <Stairs />
-                <Menu closeMenu={() => {setMenuIsOpen(false)}}/>
+                <Menu closeMenu={() => {setMenuIsOpen(false)}} menuLang={menuLang}/>
                 </>
             }
             </AnimatePresence>

@@ -1,0 +1,29 @@
+/*  SWITCHER */
+.sw-box{
+	height: 100%;
+	display: inline-block;
+}
+.switcher {
+    text-decoration: none;
+    cursor: pointer;
+    position: fixed;
+    left: 57px;
+    top: 55px;
+    z-index: 99;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: var(--averca);
+    text-transform: uppercase;
+    background: transparent;
+	padding-top: 0.5em;
+	padding-left: 0.3rem;
+	padding-bottom: 0.3rem;
+	padding-right: 0.3rem;
+}
+.switcher span{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-family: var(--averca);
+    text-transform: uppercase;
+}

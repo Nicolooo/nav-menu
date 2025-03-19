@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import Header from '../components/header';
 import Footer from '../components/footer/Footer';
 import StickyCursor from '../components/StickyCursor';
-const inter = Inter({ subsets: ['latin'] })
+import Switcher from '../components/lang/lang';
 
 export const metadata = {
   title: 'Vake Plaza',
@@ -13,8 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Header />
+        <Switcher title="GE" link="/" />
         <StickyCursor />
         {children}
         <Footer />

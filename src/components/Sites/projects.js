@@ -15,11 +15,10 @@ export default function Project({project}) {
 
     if (!project) return null;
 
-    const { title1 = '', title2 = '', src = '' } = project;
+    const { title1 = '', title2 = '', src = '', link = '' } = project;
 
     return (
-        <Link href="/spaces" className={styles.projectLLLL}>
-        <div onMouseEnter={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}} className={styles.project}>
+        <div onMouseEnter={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}} className={styles.project} onClick={() => {window.open(link, '_blank')}}>
             <p>{title1}</p>
             <motion.div variants={anim} animate={isActive ? "open" : "closed"} className={styles.imgContainer}>
                 <img 
@@ -29,6 +28,5 @@ export default function Project({project}) {
             </motion.div>
             <p>{title2}</p>
         </div>
-        </Link>
     )
 }

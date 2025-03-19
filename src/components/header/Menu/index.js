@@ -31,6 +31,32 @@ const menu = [
     href: "/contact"
   }
 ]
+const menuGE = [
+  {
+    title: "მთავარი",
+    description: "მთავარი გვერდი",
+    images: ['projects1.jpg', 'projects2.jpg'],
+    href: "/"
+  },
+  {
+    title: "სივრცე",
+    description: "შენობის სივრცეები",
+    images: ['agence1.jpg', 'agence2.jpg'],
+    href: "/spaces"
+  },
+  {
+    title: "ჩვენს შესახებ",
+    description: "ჩვენს შესახებ",
+    images: ['agence1.jpg', 'agence2.jpg'],
+    href: "/about"
+  },
+  {
+    title: "კონტაქტი",
+    description: "კონტაქტი",
+    images: ['contact1.jpg', 'contact2.jpg'],
+    href: "/contact"
+  }
+]
 
 export default function Menu({closeMenu}) {
   const router = useRouter();

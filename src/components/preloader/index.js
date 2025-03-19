@@ -30,7 +30,7 @@ export default function Index() {
     const curve = {
         initial: {
             d: initialPath,
-            transition: {duration: 1, ease: [0.76, 0, 0.24, 1],}
+            transition: {duration: 5, ease: [0.76, 0, 0.24, 1],}
         },
         exit: {
             d: targetPath,

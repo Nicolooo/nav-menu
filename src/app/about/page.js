@@ -29,7 +29,7 @@ export default function About() {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
                 >
-                    ABOUT US.
+                    About Us
                 </motion.h1>
             </section>
 
@@ -93,8 +93,8 @@ export default function About() {
                             description: "Contemporary architecture with state-of-the-art facilities and amenities"
                         },
                         {
-                            title: "SUSTAINABILITY",
-                            description: "Committed to environmental responsibility and sustainable practices"
+                            title: "ACCESSIBILITY",
+                            description: "Totally adjusted to people with mobility impairment"
                         }
                     ].map((feature, index) => (
                         <motion.div 
@@ -124,7 +124,7 @@ export default function About() {
                 >
                     <h2>OUR COMMITMENT</h2>
                     <p>
-                        We are dedicated to providing businesses with more than just office space. 
+                        We are dedicated to providing businesses with more than just office area. 
                         Vake Plaza offers a comprehensive ecosystem where companies can grow, 
                         collaborate, and achieve their full potential in an environment designed 
                         for success.

@@ -13,7 +13,7 @@ const features = [
     },
     {
         title: "Fire Security Systems",
-        description: "Each Floor is equiped with 4 fire hydrants with uninterrupted water supply. Fire Alarm Systems Smokefree staircase with fire resistant furnishing.",
+        description: "Fire Security Systems\nEach Floor is equipped with 4 fire hydrants with uninterrupted water supply.\nFire Alarm Systems\nSmokefree staircase with fire resistant furnishing (walls, special glass partitions);\nSecurity Staircase with panic doors;\nParking Space fully covered with sprinkler systems;\nFire Resistant elevator",
     }
 ];
 

@@ -12,10 +12,10 @@ import Sites from '@/components/Sites';
 import ImageSl from '@/components/imageSl';
 import Statistics from '@/components/Statistics';
 import Features from '@/components/Features';
+import Header from '@/components/header';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect( () => {
     (
       async () => {
@@ -30,19 +30,22 @@ export default function Home() {
       }
     )()
   }, [])
-  
+   
   return (
+    <>
+    <Header menuLang="en" />
     <main className={styles.main}>
        <StickyCursor/>
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Hero/>
+      <Hero title="MORE THAN JUST ANOTHER OFFICE SPACE"/>
       <ImageSl/>
       <Statistics />
-      <SmallAbout paragraph="Vake Plaza is a fully managed multifunctional Business Center, with modern facilities, conference venues and one of the largest parking space in the city."/>
+      <SmallAbout paragraph="Vake Plaza is a fully managed multifunctional Business Center, with modern facilities, conference venues and one of the largest parking spaces in the city"/>
       <Features/>
       <Sites/>
     </main>
+    </>
   )
 }

@@ -8,18 +8,27 @@ export default function Index() {
     {
       title1: "Conference",
       title2: "spaces",
-      src: "/images/zz.png"
+      src: "/images/zz.png",
+      link: "/spaces"
     },
     {
       title1: "Meeting",
       title2: "rooms",
-      src: "/images/z.png"
+      src: "/images/z.png",
+      link: "/spaces"
     },
     {
-      title1: "Movie",
-      title2: "Theatre",
-      src: "/images/zzz.png"
-    }
+      title1: "Gym",
+      title2: "",
+      src: "/images/box.JPG",
+      link: "https://12rounds.ge/en"
+    },
+    {
+      title1: "Detailing",
+      title2: "Services",
+      src: "/images/cv.jpg",
+      link: "/"
+    },
   ]
 
   return (
