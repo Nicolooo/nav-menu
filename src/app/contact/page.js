@@ -234,7 +234,7 @@ export default function Contact() {
                     transition={{ duration: 0.8, delay: 0.2, ease: [0.33, 1, 0.68, 1] }}
                 >
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.2449211493426!2d44.75250507647106!3d41.7112675712606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473df8086657d%3A0x942ee261fd87b3!2sVake%20Plaza!5e1!3m2!1sen!2shu!4v1742417409034!5m2!1sen!2shu"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d354.8575093231978!2d44.754923677957855!3d41.711053187968815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473df8086657d%3A0x942ee261fd87b3!2sVake%20Plaza!5e1!3m2!1sen!2shu!4v1743702934660!5m2!1sen!2shu"
                         width="100%"
                         height="450"
                         style={{ border: 0 }}
