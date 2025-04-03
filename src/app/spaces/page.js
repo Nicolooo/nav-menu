@@ -19,6 +19,7 @@ export default function Index() {
             <Double projects={[data[2], data[3]]} reversed={true}/>
             <Double projects={[data[4], data[5]]}/>
             <Double projects={[data[6], data[7]]} reversed={true}/>
+            <Double projects={[data[8], data[9]]}/>
         </div>
         {/* <div className={styles.interierImages}>
             <h3 className={styles.Intertitle}>Interier</h3>
