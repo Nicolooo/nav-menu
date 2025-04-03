@@ -12,7 +12,7 @@ export default function Header({menuLang}) {
 
     return (
         <div className={styles.header}>
-            <Burger openMenu={() => {setMenuIsOpen(true)}}/>
+            <Burger openMenu={() => {setMenuIsOpen(true)}} lang={menuLang}/>
             <AnimatePresence mode="wait">
             {
                 menuIsOpen && <>

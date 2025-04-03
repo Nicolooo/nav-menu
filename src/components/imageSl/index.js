@@ -32,7 +32,7 @@ export default function Index() {
         >
             <main className={styles.main}>
                 <div className={styles.imgContainer}>
-                    <img src="/photos/DJI_1759.jpg" alt="image" objectFit="cover"
+                    <img src="/Photos/DJI_1759.jpg" alt="image" objectFit="cover"
           fill 
           className='imgas'/>      
                 </div>
