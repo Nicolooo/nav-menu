@@ -2,6 +2,9 @@
 import { useState } from 'react';
 import styles from './styles.module.scss';
 import { motion } from 'framer-motion';
+import Header from '../../components/header';
+import Switcher from '../../components/lang/lang';
+import Footer from '../../components/footer/Footer';
 
 const slideInFromLeft = {
     initial: { x: -100, opacity: 0 },
@@ -96,6 +99,9 @@ export default function Contact() {
     };
 
     return (
+        <>
+        <Header menuLang="en" />
+        <Switcher title="Ge" link="/ge/contact" />
         <main className={styles.contact}>
             <section className={styles.hero}>
                 <motion.h1
@@ -239,5 +245,7 @@ export default function Contact() {
                 </motion.div>
             </section>
         </main>
+        <Footer />
+        </>
     );
 } 

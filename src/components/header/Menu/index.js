@@ -8,13 +8,13 @@ import { useRouter } from 'next/navigation';
 const menu = [
   {
     title: "Home",
-    description: "To See Everything",
+    description: "HOME PAGE",
     images: ['projects1.jpg', 'projects2.jpg'],
     href: "/"
   },
   {
     title: "Spaces",
-    description: "Spaces inside the building",
+    description: "WORK SPACES",
     images: ['agence1.jpg', 'agence2.jpg'],
     href: "/spaces"
   },
@@ -42,23 +42,23 @@ const menuGE = [
     title: "სივრცე",
     description: "შენობის სივრცეები",
     images: ['agence1.jpg', 'agence2.jpg'],
-    href: "/spaces"
+    href: "/ge/spaces"
   },
   {
     title: "ჩვენს შესახებ",
     description: "ჩვენს შესახებ",
     images: ['agence1.jpg', 'agence2.jpg'],
-    href: "/about"
+    href: "/ge/about"
   },
   {
     title: "კონტაქტი",
     description: "კონტაქტი",
     images: ['contact1.jpg', 'contact2.jpg'],
-    href: "/contact"
+    href: "/ge/contact"
   }
 ]
 
-export default function Menu({closeMenu}) {
+export default function Menu({closeMenu, menuLang}) {
   const router = useRouter();
 
   return (
@@ -82,8 +82,13 @@ export default function Menu({closeMenu}) {
 
         <div className={styles.body}>
           {
+            menuLang === 'en' ?
             menu.map((el, index) => (
-              <MenuLink data={el} index={index} key={index} closeMenu={closeMenu}/>
+              <MenuLink data={el} index={index} key={index} closeMenu={closeMenu} menuLang={menuLang}/>
+            ))
+            :
+            menuGE.map((el, index) => (
+              <MenuLink data={el} index={index} key={index} closeMenu={closeMenu} menuLang={menuLang}/>
             ))
           }
         </div>

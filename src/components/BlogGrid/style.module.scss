@@ -1,0 +1,129 @@
+.section {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #151414;
+  color: white;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  time {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #888;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #888;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    text-align: center;
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    time {
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+
+    h3 {
+      font-size: 1.125rem;
+      margin-bottom: 0.5rem;
+    }
+
+    time {
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+} 

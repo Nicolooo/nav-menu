@@ -3,15 +3,15 @@ import styles from './styles.module.scss';
 import { motion } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 
-const stats = [
+const statsEN = [
     {
         number: "24,000",
-        suffix: " m2",
+        suffix: " m²",
         label: "Total Area"
     },
     {
         number: "10,100",
-        suffix: "m2",
+        suffix: "m²",
         label: "Office Spaces"
     },
     {
@@ -25,7 +25,28 @@ const stats = [
         label: "Elevators"
     }
 ];
-
+const statsGE = [
+    {
+        number: "24,000",
+        suffix: " m²",
+        label: "მთლიანი ფართობი"
+    },
+    {
+        number: "10,100",
+        suffix: "m²",
+        label: "საოფისე ფართობი"
+    },
+    {
+        number: "234",
+        suffix: " +",
+        label: "პარკინგი"
+    },        
+    {
+        number: "4",
+        suffix: "",
+        label: "ლიფტი"
+    }
+];
 const fadeIn = {
     initial: {
         y: 100,
@@ -95,6 +116,7 @@ function CountingNumber({ value, suffix }) {
         requestAnimationFrame(animation);
     }, [isInView, targetNumber]);
 
+    
     return (
         <span ref={ref}>
             {count.toLocaleString()}{suffix}
@@ -102,11 +124,26 @@ function CountingNumber({ value, suffix }) {
     );
 }
 
-export default function Statistics() {
+export default function Statistics({lang}) {
     return (
         <div className={styles.statistics}>
             <div className={styles.wrapper}>
-                {stats.map((stat, index) => (
+                {lang === 'en' ? statsEN.map((stat, index) => (
+                    <motion.div 
+                        key={index}
+                        className={styles.statItem}
+                        variants={fadeIn}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        custom={index}
+                    >
+                        <h2>
+                            <CountingNumber value={stat.number} suffix={stat.suffix} />
+                        </h2>
+                        <p>{stat.label}</p>
+                    </motion.div>
+                )) : statsGE.map((stat, index) => (
                     <motion.div 
                         key={index}
                         className={styles.statItem}

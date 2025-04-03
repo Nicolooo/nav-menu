@@ -1,13 +1,19 @@
 "use client"
 import styles from './styles.module.scss'
-import Hero from '@/components/spaces/hero'
-import Double from '@/components/double';
-import { projects as data } from '@/app/data'
+import Hero from '../../components/spaces/hero'
+import Double from '../../components/double';
+import { projects as data } from '../../app/data'
 import Image from 'next/image';
+import Header from '../../components/header';
+import Switcher from '../../components/lang/lang';
+import Footer from '../../components/footer/Footer';
 export default function Index() {
     return (
+        <>
+        <Header menuLang="en" />
+        <Switcher title="Ge" link="/ge/spaces" />
         <div className={styles.main}>
-        <Hero/>
+        <Hero title="Spaces"/>
         <div className={styles.gallery}>
             <Double projects={[data[0], data[1]]}/>
             <Double projects={[data[2], data[3]]} reversed={true}/>
@@ -22,5 +28,7 @@ export default function Index() {
             <Image src="/images/int4.png" alt="interier4" width={1000} height={450} />
         </div> */}
        </div>
+       <Footer />
+       </>
     )
 }

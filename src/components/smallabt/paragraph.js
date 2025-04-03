@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import styles from './style.module.scss';
 import Btn from '../btn/btn';
 import { useState } from 'react';
-export default function Paragraph({paragraph}) {
+export default function Paragraph({paragraph, lang}) {
 
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -24,7 +24,7 @@ export default function Paragraph({paragraph}) {
         </motion.p>
 
       <Btn>
-      READ MORE
+      {lang === 'en' ? 'READ MORE' : 'მეტის ნახვა'}
       </Btn>
       </div>
   )

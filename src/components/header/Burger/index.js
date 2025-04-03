@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 
-export default function Burger({openMenu}) {
+export default function Burger({openMenu, lang}) {
     return (
         <div onClick={() => {openMenu()}} className={styles.button}>
             <div className={styles.background}></div>
@@ -8,7 +8,7 @@ export default function Burger({openMenu}) {
                 <line x1="56" y1="0.5" x2="4.37114e-08" y2="0.500005" stroke="white"/>
                 <line x1="56" y1="6.5" x2="28" y2="6.5" stroke="white"/>
             </svg>
-            <p>Menu</p>
+            <p>{lang === 'en' ? 'Menu' : 'მენიუ'}</p>
         </div>
     )
 }

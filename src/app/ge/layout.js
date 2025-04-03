@@ -13,11 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        <Switcher title="GE" link="/" />
-        <StickyCursor />
         {children}
-        <Footer />
       </body>
     </html>
   )

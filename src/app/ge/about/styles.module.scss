@@ -1,0 +1,156 @@
+.about {
+    background-color: #151414;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+
+        h1 {
+            font-size: 10rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #888;
+            max-width: 600px;
+        }
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 20px;
+
+        .textBlock {
+            margin-bottom: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+                color: #888;
+            }
+        }
+
+        .imageGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+
+            .imageWrapper {
+                position: relative;
+                width: 100%;
+                padding-bottom: 66.67%; // 3:2 aspect ratio
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+
+            .feature {
+                text-align: center;
+                padding: 2rem;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #888;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .about {
+        .hero {
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+        }
+
+        .content {
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        .hero {
+            height: 50vh;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .content {
+            padding: 2rem 20px;
+
+            .imageGrid {
+                grid-template-columns: 1fr;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .textBlock {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+} 

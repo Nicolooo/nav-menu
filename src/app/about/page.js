@@ -1,6 +1,9 @@
 'use client';
 import styles from './styles.module.scss';
 import { motion } from 'framer-motion';
+import Header from '../../components/header';
+import Switcher from '../../components/lang/lang';
+import Footer from '../../components/footer/Footer';
 
 const slideInFromLeft = {
     initial: { x: -100, opacity: 0 },
@@ -22,6 +25,9 @@ const slideInFromBottom = {
 
 export default function About() {
     return (
+        <>
+        <Header menuLang="en" />
+        <Switcher title="Ge" link="/ge/about" />
         <main className={styles.about}>
             <section className={styles.hero}>
                 <motion.h1 
@@ -63,7 +69,7 @@ export default function About() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2, ease: [0.33, 1, 0.68, 1] }}
                     >
-                        <img src="/galleru/1.png" alt="Vake Plaza Exterior" />
+                        <img src="/Photos/LEL_4462.jpg" alt="Vake Plaza Exterior" />
                     </motion.div>
                     <motion.div 
                         className={styles.imageWrapper}
@@ -72,7 +78,7 @@ export default function About() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.3, ease: [0.33, 1, 0.68, 1] }}
                     >
-                        <img src="/galleru/6.png" alt="Vake Plaza Interior" />
+                        <img src="/Photos/DJI_1759.jpg" alt="Vake Plaza Interior" />
                     </motion.div>
                 </motion.div>
 
@@ -132,5 +138,7 @@ export default function About() {
                 </motion.div>
             </section>
         </main>
+        <Footer />
+        </>
     );
 }

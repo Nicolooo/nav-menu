@@ -3,17 +3,18 @@ import styles from './styles.module.scss'
 import { useState} from 'react';
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
-import StickyCursor from '@/components/StickyCursor'
-import Hero from '@/components/Hero';
+import StickyCursor from '../../components/StickyCursor'
+import Hero from '../../components/Hero';
 import { AnimatePresence } from 'framer-motion';
-import Preloader from '@/components/preloader';
-import SmallAbout from '@/components/smallabt/paragraph';
-import Sites from '@/components/Sites';
-import ImageSl from '@/components/imageSl';
-import Statistics from '@/components/Statistics';
-import Features from '@/components/Features';
-import Header from '@/components/header';
-
+import Preloader from '../../components/preloader';
+import SmallAbout from '../../components/smallabt/paragraph';
+import Sites from '../../components/Sites';
+import ImageSl from '../../components/imageSl';
+import Statistics from '../../components/Statistics';
+import Features from '../../components/Features';
+import Header from '../../components/header';
+import Switcher from '../../components/lang/lang';
+import BlogGrid from '../../components/BlogGrid';
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect( () => {
@@ -34,17 +35,19 @@ export default function Home() {
   return (
     <>
     <Header menuLang="ge" />
+    <Switcher title="EN" link="/" />
     <main className={styles.main}>
        <StickyCursor/>
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Hero title="MORE THAN JUST ANOTHER OFFICE SPACE"/>
+      <Hero title="უფრო მეტი, ვიდრე უბრალოდ საოფისე ფართი"/>
       <ImageSl/>
-      <Statistics />
-      <SmallAbout paragraph="Vake Plaza is a fully managed multifunctional Business Center, with modern facilities, conference venues and one of the largest parking space in the city."/>
-      <Features/>
-      <Sites/>
+      <Statistics lang="ge"/>
+      <SmallAbout paragraph="ვაკე პლაზა მრავალფუნქციური ბიზნეს-ცენტრია, თანამედროვე საშუალებებით, საკონფერენციო დარბაზებით და ქალაქის ერთ-ერთი უდიდესი პარკინგით"/>
+      <Features lang="ge"/>
+      <Sites lang="ge"/>
+      <BlogGrid />
     </main>
     </>
   )

@@ -2,42 +2,42 @@ export const projects = [
     {
         name: "Outside View",
         description: "Sample Text",
-        src: "1.png",
+        src: "DJI_1759.jpg",
     },
     {
-        name: "Inside View",
+        name: "Decor",
         description: "Sample Text",
-        src: "2.png",
+        src: "LEL_4199.jpg",
     },
     {
         name: "Lobby",
         description: "Sample Text",
-        src: "3.png",
+        src: "LEL_4462.jpg",
     },
     {
-        name: "Inside Lobby",
+        name: "Entrance",
         description: "Sample Text",
-        src: "4.png",
+        src: "LEL_4354.jpg",
     },
     {
-        name: "Movie Theater",
+        name: "Hallway",
         description: "Sample Text",
-        src: "5.png",
+        src: "LEL_5483.jpg",
     },
     {
         name: "Conference Room",
         description: "Sample Text",
-        src: "6.png",
+        src: "LEL_5546.jpg",
     },
     {
         name: "Co-working Space",
         description: "Sample Text",
-        src: "7.png",
+        src: "LEL_5673.jpg",
     },
     {
-        name: "Renders",
+        name: "Conference Room ",
         description: "Sample Text",
-        src: "8.png",
+        src: "LEL_5330.jpg",
     }
 ]
 
