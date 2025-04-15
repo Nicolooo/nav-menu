@@ -126,17 +126,16 @@ export default function Contact() {
                         <div className={styles.infoItems}>
                             <div className={styles.infoItem}>
                                 <h3>ADDRESS</h3>
-                                <p>72a, Tchavtchavadze Avenue, 0179, Tbilisi</p>
+                                <p>Tchavtchavadze 72<sup>a</sup>, Tbilisi, Georgia</p>
                             </div>
                             <div className={styles.infoItem}>
                                 <h3>PHONE</h3>
                                 <p>Sofia Britanchuk</p>
-                                <p>+955 599 550920</p>
+                                <p>+995 599 96 21 42</p>
                             </div>
                             <div className={styles.infoItem}>
                                 <h3>EMAIL</h3>
                                 <p>info@vakeplaza.ge</p>
-                                <p>sbritanchuk@vakeplaza.ge</p>
                             </div>
                             <div className={styles.infoItem}>
                                 <h3>WORKING HOURS</h3>

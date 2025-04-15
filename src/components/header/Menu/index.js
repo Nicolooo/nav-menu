@@ -25,6 +25,12 @@ const menu = [
     href: "/about"
   },
   {
+    title: "Design",
+    description: "Design",
+    images: ['agence1.jpg', 'agence2.jpg'],
+    href: "/design"
+  },
+  {
     title: "Contact",
     description: "To Send a FAX",
     images: ['contact1.jpg', 'contact2.jpg'],
@@ -36,7 +42,7 @@ const menuGE = [
     title: "მთავარი",
     description: "მთავარი გვერდი",
     images: ['projects1.jpg', 'projects2.jpg'],
-    href: "/"
+    href: "/ge"
   },
   {
     title: "სივრცე",
@@ -49,6 +55,12 @@ const menuGE = [
     description: "ჩვენს შესახებ",
     images: ['agence1.jpg', 'agence2.jpg'],
     href: "/ge/about"
+  },
+  {
+    title: "დიზაინი",
+    description: "დიზაინი",
+    images: ['agence1.jpg', 'agence2.jpg'],
+    href: "/ge/design"
   },
   {
     title: "კონტაქტი",

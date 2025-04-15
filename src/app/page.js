@@ -16,6 +16,9 @@ import Header from '../components/header';
 import BlogGrid from '../components/BlogGrid';
 import Switcher from '../components/lang/lang';
 import Footer from '../components/footer/Footer';
+import { projects as data } from './aveji'
+import DB from '../components/db';
+import Btn from '../components/btn/btn';
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect( () => {
@@ -49,6 +52,13 @@ export default function Home() {
       lang="en"
       />
       <Features lang="en"/>
+      <div className={styles.projects}>
+        <h2 className={styles.projectsTitle}>Design</h2>
+      <DB projects={[data[0], data[1]]}/>
+        <Btn>
+          Explore More
+        </Btn>
+      </div>
       <Sites lang="en"/>
       <Footer />
     </main>

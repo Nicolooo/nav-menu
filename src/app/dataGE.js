@@ -45,9 +45,9 @@ export const projects = [
         src: "LEL_5330.jpg",
     },
     {
-        name: "12 რაუნდი",
-        description: "სამუშაო სივრცე",
-        src: "box.jpg",
+        name: "ლობი",
+        description: "საერთო სივრცე",
+        src: "LEL_4408.jpg",
     },
 ]
 

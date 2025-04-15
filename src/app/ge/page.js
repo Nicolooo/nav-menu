@@ -14,7 +14,9 @@ import Statistics from '../../components/Statistics';
 import Features from '../../components/Features';
 import Header from '../../components/header';
 import Switcher from '../../components/lang/lang';
-import BlogGrid from '../../components/BlogGrid';
+import { projects as data } from '../avejiGe'
+import DB from '../../components/db';
+import Btn from '../../components/btn/btn';
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect( () => {
@@ -46,8 +48,15 @@ export default function Home() {
       <Statistics lang="ge"/>
       <SmallAbout paragraph="ვაკე პლაზა მრავალფუნქციური ბიზნეს-ცენტრია, თანამედროვე საშუალებებით, საკონფერენციო დარბაზებით და ქალაქის ერთ-ერთი უდიდესი პარკინგით"/>
       <Features lang="ge"/>
+      <div className={styles.projects}>
+        <h2 className={styles.projectsTitle}>დიზაინი</h2>
+      <DB projects={[data[0], data[1]]}/>
+        <Btn>
+         ვრცლად ნახვა
+        </Btn>
+      </div>
       <Sites lang="ge"/>
-      <BlogGrid />
+
     </main>
     </>
   )

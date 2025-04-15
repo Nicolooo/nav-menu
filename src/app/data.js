@@ -40,14 +40,14 @@ export const projects = [
         src: "LEL_5330.jpg",
     },
     {
-        name: "საკონფერენციო ოთახი",
-        description: "სამუშაო სივრცე",
+        name: "Conference Room",
+        description: "Working space",
         src: "LEL_5330.jpg",
     },
     {
-        name: "12 რაუნდი",
-        description: "სამუშაო სივრცე",
-        src: "box.jpg",
+        name: "Lobby",
+        description: "Shared Space",
+        src: "LEL_4408.jpg",
     },
 
 ]
