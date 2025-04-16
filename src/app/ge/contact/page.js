@@ -109,7 +109,7 @@ export default function Contact() {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
                 >
-                    დაგვიკავშირდით
+                    საკონტაქტო
                 </motion.h1>
             </section>
 
