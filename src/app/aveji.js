@@ -67,7 +67,7 @@ export const projects = [
     {
         name: "Plywood Group LCW",
         description: "Charles & Ray Eames, 1945/1946",
-        src: "ply/ggg.jpg",
+        src: "ply/ggg.jpeg",
     },
 
 ]

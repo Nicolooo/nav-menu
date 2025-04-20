@@ -67,7 +67,7 @@ export const projects = [
     {
         name: "სკამების კომპლექტი LCW",
         description: "ჩარლზ და რეი იმზი, 1945/1946",
-        src: "ply/ggg.jpg",
+        src: "ply/ggg.jpeg",
     },
 
 ]
