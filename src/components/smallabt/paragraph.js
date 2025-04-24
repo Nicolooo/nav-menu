@@ -23,7 +23,7 @@ export default function Paragraph({paragraph, lang}) {
           {paragraph}
         </motion.p>
 
-      <Btn>
+      <Btn href="/about">
       {lang === 'en' ? 'READ MORE' : 'მეტის ნახვა'}
       </Btn>
       </div>

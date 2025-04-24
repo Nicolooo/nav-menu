@@ -1,6 +1,6 @@
 export const projects = [
     {
-        name: "ARCHETYPE OF MODERNITY",
+        name: "Archetype of Modernity",
         description: "By Le Corbusier, Pierre Jeanneret, Charlotte Perriand",
         src: "a/1.jpg",
     },

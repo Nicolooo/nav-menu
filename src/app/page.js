@@ -54,11 +54,11 @@ export default function Home() {
       <Features lang="en"/>
       <div className={styles.projects}>
         <h2 className={styles.projectsTitle}>Design</h2>
-      <DB projects={[data[0], data[1]]}/>
-        <Btn>
-          Explore More
-        </Btn>
-      </div>
+        <DB projects={[data[0], data[1]]}/>
+          <Btn href="/design">
+            Explore More
+          </Btn>
+        </div>
       <Sites lang="en"/>
       <Footer />
     </main>

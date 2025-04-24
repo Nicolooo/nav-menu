@@ -1,0 +1,80 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 10rem;
+    }
+}
+// .rates{
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+  //  table
+
+$background: #efefef;
+$lfs-blue: #006ac6;
+$lfs-yellow: #fab700;
+$lfs-grey: #75787b;
+
+.panelHeading{
+  text-align: center;
+}
+.tableLatitude {
+  padding: 10px;
+    width: 100%;
+    caption {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+    }
+    thead {
+        border-top: 2px solid $lfs-yellow;
+        border-bottom: 2px solid $lfs-yellow;
+        th {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            border: 0.5px solid #F1F1F1;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #F1F1F1;
+            color: #fff;
+            td {
+                padding: 10px;
+                border: 1px solid #F1F1F1;
+            }
+            th {
+                padding-left: 10px;
+                border: 1px solid #F1F1F1;
+            }
+        }
+    }
+    tfoot {
+        color: #fff;
+        font-style: italic;
+        border-bottom: 2px solid #fff;
+        tr {
+            td {
+                padding: 10px;
+                border: 1px solid #F1F1F1;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1{
+      font-size: 5rem;
+    }
+  }

@@ -32,7 +32,7 @@ const router = useRouter();
     <Magnetic>
       <div className={styles.roundedButton} style={{overflow: "hidden"}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes}
         onClick={() => {
-          router.push("/about");
+          router.push(attributes.href);
         }}
         >
           {

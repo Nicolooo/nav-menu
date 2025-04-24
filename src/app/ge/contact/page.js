@@ -126,11 +126,10 @@ export default function Contact() {
                         <div className={styles.infoItems}>
                             <div className={styles.infoItem}>
                                 <h3>მისამართი</h3>
-                                <p>თბილისი 0179, ჭავჭავაძის გამზ. 72<sup>ა</sup></p>
+                                <p>ჭავჭავაძის გამზ. 72<sup>ა</sup>, თბილისი 0179 </p>
                             </div>
                             <div className={styles.infoItem}>
                                 <h3>ტელეფონი</h3>
-                                <p>სოფია ბრიტანჩუკი</p>
                                 <p>+995 599 96 21 42</p>
                             </div>
                             <div className={styles.infoItem}>

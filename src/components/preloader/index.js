@@ -3,12 +3,11 @@ import styles from './style.module.scss';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
-
+import { useRouter } from 'next/navigation';
 
 
 // generate 10 words similar to elegant and functional
 const words = ["VAKE PLAZA","FUNCTIONAL","STYLISH","SOPHISTICATED","CLASSY","OPEN SPACE","ELEGANT","FUNCTIONAL","MODERN"];
-
 export default function Index() {
     const [index, setIndex] = useState(0);
     const [dimension, setDimension] = useState({width: 0, height:0});
@@ -37,7 +36,7 @@ export default function Index() {
             transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3}
         }
     }
-
+    // Get the language from the router
     return (
         <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
             {dimension.width > 0 && 

@@ -5,25 +5,23 @@ import { motion } from 'framer-motion';
 const featuresEN = [
     {
         title: "HVAC systems",
-        description: "VRF systems for heating and cooling for each floor locally Mitsubishi Electric fancoil systems individually controllable office by office.",
+        description: "HVAC Systems Each floor features VRF heating and cooling, with Mitsubishi Electric units allowing individual climate control for every office. ",
     },
     {
         title: "Clean Water Supply",
-        description: "Uninterrupted clean water supply with pumps and 20 Tone reservoir. Uninterruped power Supply (2000 kv.t power generator) and local in house power substation.",
+        description: "Uninterrupted clean water supply supported by pumps and a 20-ton reservoir.",
     },
     {
         title: "Fire Security Systems",
-        description: "Each Floor is equipped with 4 fire hydrants with uninterrupted water supply. Fire Alarm Systems; Smokefree staircase with fire resistant furnishing (walls, special glass partitions); Security Staircase with panic doors; Parking Space fully covered with sprinkler systems; Fire Resistant elevator.",
-       
-
+        description: "Each floor is equipped with four fire hydrants, an advanced fire alarm system, and smoke-free, fire-resistant staircases with panic doors. The parking area features a comprehensive sprinkler system, and the building includes a fire-resistant elevator for enhanced safety.",
     },
     {
         title: "Parking",
-        description: "Parking space for 1000 cars with 24/7 security and CCTV surveillance.",
+        description: "Over 230 parking spaces available, secured 24/7 with CCTV surveillance.",
     },
     {
         title: "Uninterrupted power supply",
-        description: "Source of uninterrupted power supply - a 2,000 kW generator - and own high-voltage transformer",
+        description: "Vake Plaza ensures continuous, reliable power with a 2,000 kW generator and an on-site high-voltage transformer.",
     },
 ];
     const featuresGE = [

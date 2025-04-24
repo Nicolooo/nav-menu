@@ -29,3 +29,10 @@
     font-family: var(--averca);
     text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+    .switcher {
+        left: 10px;
+        top: 40px;
+    }
+}

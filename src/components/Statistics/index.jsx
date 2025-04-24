@@ -11,12 +11,12 @@ const statsEN = [
     },
     {
         number: "10,100",
-        suffix: "m²",
+        suffix: " m²",
         label: "Office Spaces"
     },
     {
         number: "234",
-        suffix: " +",
+        suffix: "+",
         label: "Parking"
     },
     {
@@ -33,7 +33,7 @@ const statsGE = [
     },
     {
         number: "10,100",
-        suffix: "m²",
+        suffix: " m²",
         label: "საოფისე ფართობი"
     },
     {

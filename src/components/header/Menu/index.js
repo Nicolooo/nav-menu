@@ -32,7 +32,7 @@ const menu = [
   },
   {
     title: "Contact",
-    description: "To Send a FAX",
+    description: "Contact Us",
     images: ['contact1.jpg', 'contact2.jpg'],
     href: "/contact"
   }

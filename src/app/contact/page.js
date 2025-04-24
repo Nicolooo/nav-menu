@@ -126,11 +126,10 @@ export default function Contact() {
                         <div className={styles.infoItems}>
                             <div className={styles.infoItem}>
                                 <h3>ADDRESS</h3>
-                                <p>Tchavtchavadze 72<sup>a</sup>, Tbilisi, Georgia</p>
+                                <p>Tchavtchavadze 72<sup>a</sup>, Tbilisi, 0179, Georgia</p>
                             </div>
                             <div className={styles.infoItem}>
                                 <h3>PHONE</h3>
-                                <p>Sofia Britanchuk</p>
                                 <p>+995 599 96 21 42</p>
                             </div>
                             <div className={styles.infoItem}>

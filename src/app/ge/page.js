@@ -6,7 +6,7 @@ import Lenis from '@studio-freight/lenis'
 import StickyCursor from '../../components/StickyCursor'
 import Hero from '../../components/Hero';
 import { AnimatePresence } from 'framer-motion';
-import Preloader from '../../components/preloader';
+import PreloaderGE from '../../components/preloaderGE/preloaderGE';
 import SmallAbout from '../../components/smallabt/paragraph';
 import Sites from '../../components/Sites';
 import ImageSl from '../../components/imageSl';
@@ -41,7 +41,7 @@ export default function Home() {
     <main className={styles.main}>
        <StickyCursor/>
       <AnimatePresence mode='wait'>
-        {isLoading && <Preloader />}
+        {isLoading && <PreloaderGE />}
       </AnimatePresence>
       <Hero title="უფრო მეტი, ვიდრე უბრალოდ საოფისე ფართი"/>
       <ImageSl/>
