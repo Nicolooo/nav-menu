@@ -7,9 +7,6 @@ export default function ParkingGe() {
          <Header menuLang="ge" />
          <Switcher title="En" link="/parking" />
          <main className={styles.parking}>
-            <section className={styles.hero}>
-                <h1>პარკინგი</h1>
-            </section>
             <section className={styles.rates}>
                 <div className={styles.panel}>
                     <div className={styles.panelHeading}>

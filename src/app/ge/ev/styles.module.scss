@@ -1,0 +1,123 @@
+.ev{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//  ALIGN THEM IN THE CENTER WITH FLEX THEY SHOULD BE 3 COLUMNED CARDS IN ONE SEcTION SIDE BY SIDE
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.card{
+    background-color: #000;
+    width: 30%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//  LINKS 
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+  .gallery{
+    width: 70%;
+  }
+
+
+//   Projects
+
+.project{
+  text-transform: uppercase;
+    border-top: 2px solid white;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.project p{
+    font-size: 5vw;
+    margin: 0px;
+}
+.project p:nth-of-type(1){
+    margin-right: 0.75vw;
+}
+.project p:nth-of-type(2){
+    margin-left: 0.75vw;
+}
+.project:last-of-type{
+    border-bottom: 2px solid white;
+}
+.project img{
+    width: 10vw;
+}
+
+.project .imgContainer{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 0;
+}
+
+.title{
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+.projectLLLL{
+  text-decoration: none;
+  font-size: 5vw;
+  color: white;
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .project{
+    font-size: 2rem;
+  }
+  .title{
+    font-size: 2rem;
+  }
+  .projectLLLL{
+    font-size: 10vw;
+  }
+  .project p{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project{
+    font-size: 10;
+  }
+}
+
+.imgContainer{
+    background-color: #fff;
+    color: #000;
+    font-size: 10px;
+}

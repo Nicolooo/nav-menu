@@ -1,54 +1,50 @@
 export const projects = [
     {
+        name: "ჩვენ შესახებ",
+        description: "ჩვენ შესახებ",
+        src: "aboutUs.jpg",
+    },
+    {
+        name: "დიზაინი",
+        description: "დიზაინი",
+        src: "Design.jpg",
+    },
+    {
+        name: "ლობი",
+        description: "ლობი",
+        src: "Lobby.jpg",
+    },
+    {
+        name: "ლობი",
+        description: "ლობი",
+        src: "Lobby1.jpg",
+    },
+    {
+        name: "ლობი",
+        description: "ლობი",
+        src: "lobby5.jpg",
+    },
+    {
+        name: "შეხვედრის ოთახი",
+        description: "შეხვედრის ოთახი",
+        src: "MeetingRoom.jpg",
+    },
+    {
         name: "შენობის ექსტერიერი",
-        description: "ექსტერიერი",
-        src: "DJI_1759.jpg",
+        description: "შენობის ექსტერიერი",
+        src: "OutsideView.jpg",
     },
     {
-        name: "ლობი",
-        description: "ინტერიერი",
-        src: "LEL_4462.jpg",
+        name: "რესეფშენი",
+        description: "რესეფშენი",
+        src: "Reception.jpg",
     },
     {
-        name: "ლობი",
-        description: "ინტერიერი",
-        src: "LEL_4354.jpg",
+        name: "რესეფშენი",
+        description: "რესეფშენი",
+        src: "Reception1.jpg",
     },
-    {
-        name: "საკონფერენციო ოთახი",
-        description: "სამუშაო სივრცე",
-        src: "LEL_5330.jpg",
-    },
-    {
-        name: "კორიდორი",
-        description: "სამუშაო სივრცე",
-        src: "LEL_5483.jpg",
-    },
-    {
-        name: "საკონფერენციო ოთახი",
-        description: "სამუშაო სივრცე",
-        src: "LEL_5546.jpg",
-    },
-    {
-        name: "საერთო სამუშაო სივრცე",
-        description: "სამუშაო სივრცე",
-        src: "LEL_5673.jpg",
-    },
-    {
-        name: "საკონფერენციო ოთახი",
-        description: "სამუშაო სივრცე",
-        src: "LEL_5330.jpg",
-    },
-    {
-        name: "საკონფერენციო ოთახი",
-        description: "სამუშაო სივრცე",
-        src: "LEL_5330.jpg",
-    },
-    {
-        name: "ლობი",
-        description: "საერთო სივრცე",
-        src: "LEL_4408.jpg",
-    },
+
 ]
 
 export default projects;

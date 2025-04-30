@@ -46,7 +46,7 @@ export default function Double({projects, reversed}) {
         <div className={styles.imageContainer}>
           <div className={styles.stretchyWrapper}>
             <Image 
-              src={`/Photos/${projects[0].src}`}
+              src={`/aveji/${projects[0].src}`}
               fill={true}
               alt={"image"}
             />
@@ -61,7 +61,7 @@ export default function Double({projects, reversed}) {
         <div ref={secondImage} className={styles.imageContainer}>
           <div className={styles.stretchyWrapper}>
             <Image 
-              src={`/Photos/${projects[1].src}`}
+              src={`/aveji/${projects[1].src}`}
               fill={true}
               alt={"image"}
             />

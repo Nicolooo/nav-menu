@@ -9,13 +9,13 @@ export default function Index({lang}) {
       title1: "Meeting",
       title2: "rooms",
       src: "/images/z.png",
-      link: "/spaces"
+      link: "/contact"
     },
     {
       title1: "Detailing",
       title2: "Services",
-      src: "/images/cv.jpg",
-      link: "/"
+      src: "/images/orfe.jpg",
+      link: "https://www.facebook.com/Theparki"
     },
     {
       title1: "Gym",
@@ -26,14 +26,14 @@ export default function Index({lang}) {
     {
       title1: "Parking",
       title2: "",
-      src: "/images/front.png",
-      link: "/spaces"
+      src: "/images/park.png",
+      link: "/parking"
     },
     {
       title1: "Chargers",
       title2: "",
-      src: "/images/front.png",
-      link: "/spaces"
+      src: "/images/ev.png",
+      link: "/ev"
     },
   ]
 
@@ -44,13 +44,13 @@ export default function Index({lang}) {
       title1: "შეხვედრის",
       title2: "ოთახები",
       src: "/images/z.png",
-      link: "/spaces"
+      link: "/ge/contact"
     },
     {
       title1: "დითეილინგ",
       title2: "სერვისები",
-      src: "/images/cv.jpg",
-      link: "/"
+      src: "/images/orfe.jpg",
+      link: "https://www.facebook.com/Theparki"
     },
     {
       title1: "12 რაუნდი",
@@ -61,14 +61,14 @@ export default function Index({lang}) {
     {
       title1: "პარკინგი",
       title2: "",
-      src: "/images/front.png",
+      src: "/images/park.png",
       link: "/ge/parking"
     },
     {
       title1: "EV",
       title2: "დამტენი",
-      src: "/Photos/DJI_1759.jpg",
-      link: "/ge/parking"
+      src: "/images/ev.png",
+      link: "/ge/ev"
     },
     
   ]

@@ -1,55 +1,49 @@
 export const projects = [
     {
-        name: "Outside View",
-        description: "exterior",
-        src: "DJI_1759.jpg",
+        name: "About Us",
+        description: "About Us",
+        src: "aboutUs.jpg",
+    },
+    {
+        name: "Design",
+        description: "interior",
+        src: "design.jpg",
     },
     {
         name: "Lobby",
         description: "interior",
-        src: "LEL_4462.jpg",
+        src: "lobby.jpg",
     },
     {
         name: "Lobby",
-        description: "interior",
-        src: "LEL_4354.jpg",
+        description: "Working space",
+        src: "lobby1.jpg",
+    },
+    {
+        name: "Lobby",
+        description: "Working space",
+        src: "lobby5.jpg",
     },
     {
         name: "Meeting Room",
-        description: "Working space",
-        src: "LEL_5330.jpg",
+        description: "Meeting Rooms",
+        src: "meetingroom.jpg",
     },
     {
-        name: "Hallway",
-        description: "Working space",
-        src: "LEL_5483.jpg",
+        name: "Outside View",
+        description: "Exterior",
+        src: "outsideview.jpg",
     },
     {
-        name: "Conference Room",
-        description: "Working space",
-        src: "LEL_5546.jpg",
+        name: "Reception ",
+        description: "interior",
+        src: "reception.jpg",
     },
     {
-        name: "Co-working Space",
+        name: "Reception",
         description: "Working space",
-        src: "LEL_5673.jpg",
+        src: "reception1.jpg",
     },
-    {
-        name: "Conference Room ",
-        description: "Working space",
-        src: "LEL_5330.jpg",
-    },
-    {
-        name: "Conference Room",
-        description: "Working space",
-        src: "LEL_5330.jpg",
-    },
-    {
-        name: "Lobby",
-        description: "Shared Space",
-        src: "LEL_4408.jpg",
-    },
-
 ]
 
 export default projects;
