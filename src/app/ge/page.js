@@ -51,7 +51,7 @@ export default function Home() {
       <div className={styles.projects}>
         <h2 className={styles.projectsTitle}>დიზაინი</h2>
       <DB projects={[data[0], data[1]]}/>
-        <Btn>
+        <Btn href="/ge/design">
          ვრცლად ნახვა
         </Btn>
       </div>

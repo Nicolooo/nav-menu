@@ -65,7 +65,7 @@ export default function Index({lang}) {
       link: "/ge/parking"
     },
     {
-      title1: "EV",
+      title1: "ელ",
       title2: "დამტენი",
       src: "/images/ev.png",
       link: "/ge/ev"
