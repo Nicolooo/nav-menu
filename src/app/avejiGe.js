@@ -1,7 +1,7 @@
 export const projects = [
     {
         name: "თანამედროვეობის არქეტიპი",
-        description: "ლე კორბუზიე, პიერ ჟანერე, შარლოტა პერიანი, 1929",
+        description: "ლე კორბუზიე, პიერ ჟანერე, შარლოტა პერიანი, 1928",
         src: "a/1.jpg",
     },
     {
@@ -31,7 +31,7 @@ export const projects = [
     },
     {
         name: "ფორნაზეტი",
-        description: "",
+        description: "ფორნაზეტი - 1940",
         src: "fo/7.jpg",
     },
     {
@@ -41,7 +41,7 @@ export const projects = [
     },
     {
         name: "ხალიჩა გადაშენებული ცხოველებით",
-        description: "moooi carpets",
+        description: "moooi carpets - 2018",
         src: "rug/11.png",
     },
     {

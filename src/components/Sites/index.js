@@ -18,7 +18,7 @@ export default function Index({lang}) {
       link: "https://www.facebook.com/Theparki"
     },
     {
-      title1: "Gym",
+      title1: "Boxing Club",
       title2: "",
       src: "/images/box.JPG",
       link: "https://12rounds.ge/en"

@@ -1,7 +1,7 @@
 export const projects = [
     {
         name: "Archetype of Modernity",
-        description: "By Le Corbusier, Pierre Jeanneret, Charlotte Perriand",
+        description: "By Le Corbusier, Pierre Jeanneret, Charlotte Perriand - 1928",
         src: "a/1.jpg",
     },
     {
@@ -31,7 +31,7 @@ export const projects = [
     },
     {
         name: "Fornasetti",
-        description: "",
+        description: "Fornasetti - 1940",
         src: "fo/7.jpg",
     },
     {
@@ -41,7 +41,7 @@ export const projects = [
     },
     {
         name: "Extinct Animal Rug",
-        description: "moooi carpets",
+        description: "moooi carpet - 2018",
         src: "rug/11.png",
     },
     {
