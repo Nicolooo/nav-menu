@@ -1,7 +1,7 @@
 export const projects = [
     {
-        name: "About Us",
-        description: "About Us",
+        name: "Interior",
+        description: "Interior",
         src: "aboutUs.jpg",
     },
     {

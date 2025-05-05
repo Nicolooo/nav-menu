@@ -1,7 +1,7 @@
 export const projects = [
     {
-        name: "ჩვენ შესახებ",
-        description: "ჩვენ შესახებ",
+        name: "ინტერიერი",
+        description: "ინტერიერი",
         src: "aboutUs.jpg",
     },
     {
