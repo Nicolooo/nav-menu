@@ -130,7 +130,7 @@ export default function Contact() {
                             </div>
                             <div className={styles.infoItem}>
                                 <h3>ტელეფონი</h3>
-                                <p>+995 599 96 21 42</p>
+                                <p>+995 595 59 43 42</p>
                             </div>
                             <div className={styles.infoItem}>
                                 <h3>ელ-ფოსტა</h3>
